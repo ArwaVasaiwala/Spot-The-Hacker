@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spot the Hacker | Cyber Threat Detective</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="brand"><span>🛡️</span> SPOT THE HACKER <small>Cyber Threat Detective</small></header>
+    <section id="home" class="panel">
+      <div class="eyebrow">CYBERSECURITY TRAINING SIMULATOR</div>
+      <h1>Can you spot the threat?</h1>
+      <p>Investigate emails, suspicious URLs, and network activity. Choose a verdict, identify the evidence, and select the safest response.</p>
+      <div class="level-grid"><div>📨<strong>Phishing Detective</strong><small>Level 1</small></div><div>🌐<strong>URL Investigator</strong><small>Level 2</small></div><div>🔥<strong>Network Defender</strong><small>Level 3</small></div></div>
+      <p class="muted">15 cases · 3 lives · Explanations after every case</p>
+      <button id="startBtn" class="primary">Start Investigation →</button>
+    </section>
+    <section id="game" class="panel hidden">
+      <div class="status"><span id="levelLabel"></span><span id="progressLabel"></span><span id="livesLabel"></span><span id="scoreLabel"></span></div>
+      <div class="progress"><div id="progressBar"></div></div>
+      <div class="eyebrow" id="caseLabel"></div>
+      <h2 id="questionTitle"></h2>
+      <div id="scenario" class="scenario"></div>
+      <div id="questions"></div>
+      <div class="actions"><button id="hintBtn" class="secondary">💡 Hint (-5 points)</button><button id="submitBtn" class="primary">Submit Investigation</button></div>
+      <div id="feedback" class="feedback hidden" aria-live="polite"></div>
+      <button id="nextBtn" class="primary hidden">Next Case →</button>
+    </section>
+    <section id="result" class="panel hidden"><div class="eyebrow">INVESTIGATION COMPLETE</div><h1 id="resultTitle"></h1><p id="resultDetails"></p><button id="restartBtn" class="primary">Play Again ↻</button></section>
+    <footer>Educational simulation — all addresses, logs, and incidents are fictional.</footer>
+  </main>
+</body>
+</html>
